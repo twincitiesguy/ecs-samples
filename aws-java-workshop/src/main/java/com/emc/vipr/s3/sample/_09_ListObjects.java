@@ -86,7 +86,7 @@ public class _09_ListObjects {
         }
     }//listObjectsV1
 
-    public void listObjectsV2(AmazonS3 s3) {
+    /*public void listObjectsV2(AmazonS3 s3) {
         try {
             System.out.println("Listing objects");
             final ListObjectsV2Request req = new ListObjectsV2Request().withBucketName(AWSS3Factory.S3_BUCKET).withMaxKeys(2);
@@ -162,5 +162,5 @@ public class _09_ListObjects {
                     "such as not being able to access the network.");
             System.out.println("Error Message: " + ace.getMessage());
         }
-    }//listObjectsV2Alt
+    }//listObjectsV2Alt */
 }

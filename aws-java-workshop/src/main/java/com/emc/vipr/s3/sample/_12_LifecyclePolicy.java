@@ -2,15 +2,10 @@ package com.emc.vipr.s3.sample;
 
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.BucketLifecycleConfiguration;
-import com.amazonaws.services.s3.model.lifecycle.LifecycleFilter;
-import com.amazonaws.services.s3.model.lifecycle.LifecycleFilterPredicate;
-import com.amazonaws.services.s3.model.lifecycle.LifecyclePredicateVisitor;
-import com.amazonaws.services.s3.model.lifecycle.LifecyclePrefixPredicate;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
-import java.util.Date;
 
 /**
  * Created by schumb on 8/14/2017.

@@ -15,9 +15,6 @@
 package com.emc.vipr.s3.sample;
 
 import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.transfer.Download;
-import com.amazonaws.services.s3.transfer.TransferManager;
-import com.amazonaws.services.s3.transfer.TransferManagerBuilder;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -41,7 +38,7 @@ public class _10_ReadLargeObjectTM {
         // file will be placed in temp dir with .tmp extension
         File file = File.createTempFile("read-large-object-tm", null);
 
-        TransferManager tm = TransferManagerBuilder.standard()
+        /*TransferManager tm = TransferManagerBuilder.standard()
                 .withS3Client(s3)
                 .build();
 
@@ -51,7 +48,7 @@ public class _10_ReadLargeObjectTM {
         // block until download finished
         download.waitForCompletion();
 
-        tm.shutdownNow();
+        tm.shutdownNow();*/
 
         // print end time
         Date end_date = new Date();
